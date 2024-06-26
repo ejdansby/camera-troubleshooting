@@ -22,7 +22,7 @@ SERVICE VISIT INFO
 
   
   <label for="A"><b>TSEXEMPT?:</b></label><br>
-  <input type="checkbox" id="A" name="A"><br>
+   <label for="A"> TSEXEMPT</label><br>
 
   <label for="B"><b>Access/Gate/Lockbox:</b></label><br>
   <input type="text" id="B" name="B"><br>
@@ -61,17 +61,10 @@ function copyForm() {
     var G = document.getElementById("G").value;
 
 
-  // If the checkbox is checked, display the output text
-  if (A.checked == true){
-    text.style.display = "TSEXEMPT";
-  } else {
-    text.style.display = "none";
-  }
-}
+ 
 
 
-
-    var output = "\nTSEXE MPT?: " + A + "\nACCESS/GATE/LOCKBOX: " + B + "\nSYSTEM TYPE: " + C + "\nSYSTEM #: " + D + "\nISSUE: " + E + "\nNAME/CONTACT#: " + F + "\nQUOTED RATE: " + G ; 
+    var output = "\nTSEXEMPT?: " + A + "\nACCESS/GATE/LOCKBOX: " + B + "\nSYSTEM TYPE: " + C + "\nSYSTEM #: " + D + "\nISSUE: " + E + "\nNAME/CONTACT#: " + F + "\nQUOTED RATE: " + G ; 
     navigator.clipboard.writeText(output);
 }
 
