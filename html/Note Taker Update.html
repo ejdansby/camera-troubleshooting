@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<Html>     
+<Head>      
+<Title>     
+NOTE TAKER
+
+
+</Title>  
+</Head>  
+<Body>  
+   <h1>NOTE TAKER</h2>
+ 
+
+<form>
+
+<Body background="C:\Users\513815\Desktop\download.png">   
+
+
+<div class="notes">
+
+	<form id="notepad">
+
+
+
+  <label for="A"><b>NAME:</b></label><br>
+  <input type="text" id="A" name="A"><br>
+
+  <label for="B"><b>AR#:</b></label><br>
+  <input type="text" id="B" name="B" value=""><br>
+
+  <label for="C"><b>SYSTEM #:</b></label><br>
+  <input type="text" id="C" name="C" value=""><br>
+
+  <label for="D"><b>Verified:</b></label><br>
+  <input type="text" id="D" name="D" value="YES"><br>
+
+  <label for="E"><b>REASON:</b></label><br>
+  <input type="text" id="E" name="E" value=""><br>
+
+  <label for="F"><b>Resolution:</b></label><br>
+
+    <textarea id="F" style="width:700px; height: 150px;">
+
+    </textarea><br>
+
+ <label for="G"><b>Extension:</b></label><br>
+  <input type="text" id="G" name="G" value="Erick 1306228"><br>
+</div>
+
+
+</div>
+
+
+<button onclick="copyForm()">Copy text</button>
+
+<script>
+function copyForm() {
+    var A = document.getElementById("A").value;
+    var B = document.getElementById("B").value;
+    var C = document.getElementById("C").value;
+    var D = document.getElementById("D").value;
+    var E = document.getElementById("E").value;
+    var F = document.getElementById("F").value;
+    var G = document.getElementById("G").value;
+    var output = "NAME: " + A + "\nAR: " + B + "\nSYSTEM #: " + C + "\nVERIFIED: " + D + "\nREASON: " + E + "\nRESOLUTION: " + F + "\nEXTENSION: " + G  ; 
+    navigator.clipboard.writeText(output);
+}
+
+</script>
+
+
+<p><B>FOR SERVICE APPOINTMENT, 
+<a href="file:///C:/Users/513815/Desktop/TECH%20VISIT.HTML" target="_blank" rel="noopener noreferrer">RESI SCHEDULING</a>, OR 
+<a href="file:///C:/Users/513815/Desktop/DEALER%20SERVICE.HTML" target="_blank" rel="noopener noreferrer">DEALER SERVICE</a></p>
+
+</body>
+</html>
