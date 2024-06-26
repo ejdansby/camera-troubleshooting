@@ -22,7 +22,7 @@ SERVICE VISIT INFO
 
   
   <label for="A"><b>TSEXEMPT?:</b></label>
-   <input type="checkbox" id="A" name=" " value="TSEXEMPT"><br><br>
+   <input type="checkbox" id="A" name=" " value="TSEXEMPT"><br>
 
   <label for="B"><b>Access/Gate/Lockbox:</b></label><br>
   <input type="text" id="B" name="B"><br>
@@ -64,7 +64,7 @@ function copyForm() {
  
 
 
-    var output = "\nTSEXEMPT?: " + A + "\nACCESS/GATE/LOCKBOX: " + B + "\nSYSTEM TYPE: " + C + "\nSYSTEM #: " + D + "\nISSUE: " + E + "\nNAME/CONTACT#: " + F + "\nQUOTED RATE: " + G ; 
+    var output = "\nsubmit: " + A + "\nACCESS/GATE/LOCKBOX: " + B + "\nSYSTEM TYPE: " + C + "\nSYSTEM #: " + D + "\nISSUE: " + E + "\nNAME/CONTACT#: " + F + "\nQUOTED RATE: " + G ; 
     navigator.clipboard.writeText(output);
 }
 
