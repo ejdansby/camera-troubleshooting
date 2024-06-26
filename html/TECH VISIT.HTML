@@ -22,24 +22,27 @@ SERVICE VISIT INFO
 
 <input type="checkbox">TSEXEMPT?</label><br>
 
+  <label for="A"><b>TSEXEMPT?:</b></label><br>
+  <input type="checkbox" id="A" name="A"><br>
+
   <label for="A"><b>Access/Gate/Lockbox:</b></label><br>
   <input type="text" id="A" name="A"><br>
 
-  <label for="B"><b>SYSTEM TYPE:</b></label><br>
-  <input type="text" id="B" name="B" value=""><br>
-
-  <label for="C"><b>SYSTEM #:</b></label><br>
+  <label for="C"><b>SYSTEM TYPE:</b></label><br>
   <input type="text" id="C" name="C" value=""><br>
 
-  <label for="D"><b>ISSUE:</b></label><br>
-  <textarea id="D" style="width:700px; height: 30px;">
+  <label for="D"><b>SYSTEM #:</b></label><br>
+  <input type="text" id="D" name="D" value=""><br>
+
+  <label for="E"><b>ISSUE:</b></label><br>
+  <textarea id="E" style="width:700px; height: 30px;">
   </textarea><br>
 
-  <label for="E"><b>NAME/CONTACT#:</b></label><br>
-  <input type="text" id="E" name="E" value=""><br>
-
-  <label for="F"><b>QUOTED RATE:</b></label><br>
+  <label for="F"><b>NAME/CONTACT#:</b></label><br>
   <input type="text" id="F" name="F" value=""><br>
+
+  <label for="G"><b>QUOTED RATE:</b></label><br>
+  <input type="text" id="G" name="G" value=""><br>
 
 
 
@@ -56,6 +59,7 @@ function copyForm() {
     var D = document.getElementById("D").value;
     var E = document.getElementById("E").value;
     var F = document.getElementById("F").value;
+    var G = document.getElementById("G").value;
 
     var output = "ACCESS/GATE/LOCKBOX: " + A + "\nSYSTEM TYPE: " + B + "\nSYSTEM #: " + C + "\nISSUE: " + D + "\nNAME/CONTACT#: " + E + "\nQUOTED RATE: " + F ; 
     navigator.clipboard.writeText(output);
