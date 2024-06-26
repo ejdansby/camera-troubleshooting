@@ -60,6 +60,23 @@ function copyForm() {
     var F = document.getElementById("F").value;
     var G = document.getElementById("G").value;
 
+
+function myFunction() {
+  // Get the checkbox
+  var checkBox = document.getElementById("myCheck");
+  // Get the output text
+  var text = document.getElementById("text");
+
+  // If the checkbox is checked, display the output text
+  if (checkBox.checked == true){
+    text.style.display = "block";
+  } else {
+    text.style.display = "none";
+  }
+}
+
+
+
     var output = "\nTSEXE MPT?: " + A + "\nACCESS/GATE/LOCKBOX: " + B + "\nSYSTEM TYPE: " + C + "\nSYSTEM #: " + D + "\nISSUE: " + E + "\nNAME/CONTACT#: " + F + "\nQUOTED RATE: " + G ; 
     navigator.clipboard.writeText(output);
 }
